@@ -1,0 +1,7 @@
+
+<resources>
+	<integer name="max_asteroides">5</integer>
+    <bool name="misiles_ilimitados">true</bool>
+	<item type="id" name="button_ok"/>
+	<item type="id" name="dialog_exit"/>
+</resources>

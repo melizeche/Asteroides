@@ -1,0 +1,20 @@
+<resources>
+    <string-array name="dias_semana">                   
+		<item>lunes</item>
+		<item>martes</item>
+		<item>miercoles</item>
+		<item>jueves</item>
+		<item>viernes</item>
+		<item>sabado</item>
+		<item>domingo</item>
+	</string-array>
+	<integer-array name="primos">
+		<item>2</item><item>3</item><item>5</item>
+	</integer-array>
+	<!-- 
+	<array name="asteroides">   \
+		<item>@drawable/asteroide1</item>
+		<item>@drawable/asteroide1</item>
+	</array>
+	 -->
+</resources>
