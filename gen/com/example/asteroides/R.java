@@ -32,10 +32,12 @@ public final class R {
          */
         public static final int activity_horizontal_margin=0x7f060000;
         public static final int activity_vertical_margin=0x7f060001;
-        public static final int alto=0x7f060004;
+        public static final int alto=0x7f060006;
+        public static final int d15dp=0x7f060003;
+        public static final int d20dp=0x7f060004;
         public static final int d25dp=0x7f060002;
-        public static final int tamano_fuente=0x7f060005;
-        public static final int treinta=0x7f060003;
+        public static final int tamano_fuente=0x7f060007;
+        public static final int treinta=0x7f060005;
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
@@ -100,6 +102,11 @@ public final class R {
          */
         public static final int AppTheme=0x7f080001;
         public static final int MiEstilo=0x7f080003;
+        public static final int MiEstilo_grande=0x7f080004;
+        public static final int MiEstilo_grande_negrita=0x7f080005;
+        public static final int TemaAsteroides=0x7f080008;
+        public static final int TextoAsteroides=0x7f080006;
+        public static final int TextoAsteroides_botones=0x7f080007;
         public static final int TextoGrande=0x7f080002;
     }
 }

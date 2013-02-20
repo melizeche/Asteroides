@@ -17,11 +17,12 @@
         android:layout_gravity="center"
         android:layout_marginBottom="20dp"
         android:text="@string/app_name"
-        android:textColor="@color/Gris"
-        android:textSize="@dimen/d25dp" />
+        android:textAppearance="@style/TextoAsteroides"
+        android:textColor="@color/Gris" />
 
     <Button
         android:id="@+id/button1"
+        style="@style/TextoAsteroides.botones"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -29,6 +30,7 @@
 
     <Button
         android:id="@+id/button2"
+        style="@style/TextoAsteroides.botones"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -36,6 +38,7 @@
 
     <Button
         android:id="@+id/button3"
+        style="@style/TextoAsteroides.botones"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -43,6 +46,7 @@
 
     <Button
         android:id="@+id/button4"
+        style="@style/TextoAsteroides.botones"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

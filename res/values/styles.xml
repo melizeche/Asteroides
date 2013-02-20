@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!--
         Base application theme, dependent on API level. This theme is replaced
@@ -30,8 +30,29 @@
        <item name="android:typeface">monospace</item>
    </style>
    
+	<style name="MiEstilo.grande">
+		<item name="android:textSize">18pt</item>
+	</style>
+	<style name="MiEstilo.grande.negrita">
+		<item name="android:textStyle">bold</item>
+	</style>
+	<style name="TextoAsteroides" parent="@android:style/TextAppearance.Medium">
+	    <item name="android:textSize">@dimen/treinta</item> 
+		<item name="android:typeface">monospace</item>
+		<item name="android:textStyle">bold</item>
+	</style>
 	
-	
-	
+	<style name="TextoAsteroides.botones">
+		
+		<item name="android:textStyle">normal</item>
+		<item name="android:textSize">@dimen/d25dp</item> 
+		<item name="android:padding">@dimen/d15dp</item>
+		<item name="android:textColor">#000</item>
+
+		
+	</style>
+	<style name="TemaAsteroides" parent="android:Theme.Black.NoTitleBar">
+	    <item name="android:typeface">monospace</item>
+	</style>
 	
 </resources>
