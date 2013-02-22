@@ -43,36 +43,39 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int LinearLayout1=0x7f0b0002;
-        public static final int action_settings=0x7f0b000a;
-        public static final int button1=0x7f0b0004;
-        public static final int button2=0x7f0b0005;
-        public static final int button3=0x7f0b0006;
-        public static final int button4=0x7f0b0007;
+        public static final int LinearLayout1=0x7f0b0003;
+        public static final int TextView01=0x7f0b0002;
+        public static final int action_settings=0x7f0b000b;
+        public static final int button03=0x7f0b0007;
+        public static final int button1=0x7f0b0005;
+        public static final int button2=0x7f0b0006;
+        public static final int button4=0x7f0b0008;
         public static final int button_ok=0x7f0b0000;
         public static final int dialog_exit=0x7f0b0001;
-        public static final int tableRow1=0x7f0b0008;
-        public static final int tableRow2=0x7f0b0009;
-        public static final int textView1=0x7f0b0003;
+        public static final int tableRow1=0x7f0b0009;
+        public static final int tableRow2=0x7f0b000a;
+        public static final int textView1=0x7f0b0004;
     }
     public static final class integer {
         public static final int max_asteroides=0x7f090000;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
+        public static final int acercade=0x7f030000;
+        public static final int main=0x7f030001;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;
     }
     public static final class string {
         public static final int Acerca=0x7f070005;
+        public static final int AcercaText=0x7f070007;
         public static final int action_settings=0x7f070002;
         public static final int app_name=0x7f070000;
         public static final int configurar=0x7f070004;
         public static final int hello_world=0x7f070001;
         public static final int jugar=0x7f070003;
         public static final int salir=0x7f070006;
-        public static final int saludo=0x7f070007;
+        public static final int saludo=0x7f070008;
     }
     public static final class style {
         /** 

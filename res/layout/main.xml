@@ -1,0 +1,55 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/Negro"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/treinta"
+    tools:context=".Asteroides" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="@string/app_name"
+        android:textAppearance="@style/TextoAsteroides"
+        android:textColor="@color/Gris" />
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/TextoAsteroides.botones"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/jugar" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/TextoAsteroides.botones"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/configurar" />
+
+    <Button
+        android:id="@+id/button03"
+        style="@style/TextoAsteroides.botones"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/Acerca" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/TextoAsteroides.botones"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/salir" />
+
+</LinearLayout>
