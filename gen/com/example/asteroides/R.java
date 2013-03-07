@@ -49,30 +49,39 @@ public final class R {
         public static final int treinta=0x7f070005;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int asteroide1=0x7f020000;
+        public static final int asteroide2=0x7f020001;
+        public static final int asteroide3=0x7f020002;
+        public static final int asteroide4=0x7f020003;
+        public static final int ic_launcher=0x7f020004;
     }
     public static final class id {
-        public static final int LinearLayout1=0x7f0c0003;
+        public static final int LinearLayout1=0x7f0c0006;
         public static final int TextView01=0x7f0c0002;
-        public static final int acercaDe=0x7f0c000d;
-        public static final int action_settings=0x7f0c000b;
-        public static final int button03=0x7f0c0007;
-        public static final int button1=0x7f0c0005;
-        public static final int button2=0x7f0c0006;
-        public static final int button4=0x7f0c0008;
+        public static final int acercaDe=0x7f0c0010;
+        public static final int action_settings=0x7f0c000e;
+        public static final int button03=0x7f0c000a;
+        public static final int button1=0x7f0c0008;
+        public static final int button2=0x7f0c0009;
+        public static final int button4=0x7f0c000b;
         public static final int button_ok=0x7f0c0000;
-        public static final int config=0x7f0c000c;
+        public static final int config=0x7f0c000f;
         public static final int dialog_exit=0x7f0c0001;
-        public static final int tableRow1=0x7f0c0009;
-        public static final int tableRow2=0x7f0c000a;
-        public static final int textView1=0x7f0c0004;
+        public static final int icono=0x7f0c0003;
+        public static final int subtitulo=0x7f0c0005;
+        public static final int tableRow1=0x7f0c000c;
+        public static final int tableRow2=0x7f0c000d;
+        public static final int textView1=0x7f0c0007;
+        public static final int titulo=0x7f0c0004;
     }
     public static final class integer {
         public static final int max_asteroides=0x7f0a0000;
     }
     public static final class layout {
         public static final int acercade=0x7f030000;
-        public static final int main=0x7f030001;
+        public static final int elemento_lista=0x7f030001;
+        public static final int main=0x7f030002;
+        public static final int puntuaciones=0x7f030003;
     }
     public static final class menu {
         public static final int main=0x7f0d0000;
@@ -81,6 +90,7 @@ public final class R {
     public static final class string {
         public static final int Acerca=0x7f080005;
         public static final int AcercaText=0x7f080007;
+        public static final int Puntuaciones=0x7f080009;
         public static final int action_settings=0x7f080002;
         public static final int app_name=0x7f080000;
         public static final int configurar=0x7f080004;

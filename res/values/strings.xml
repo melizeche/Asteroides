@@ -6,10 +6,10 @@
     <string name="action_settings">Settings</string>
     <string name="jugar">Jugar</string>
     <string name="configurar">Configurar</string>
-    <string name="Acerca">Acerca de... </string>
+    <string name="Acerca">Acerca de...</string>
     <string name="salir">Salir</string>
 	<string name="AcercaText">Este programa ha sido desarrollado como ejemplo en el curso de Android para demostrar cómo se pueden lanzar nuevas actividades desde la actividad principal.</string>
-  
     <string name="saludo">¡Hola Mundo!</string>
+    <string name="Puntuaciones">Puntuaciones</string>
 
 </resources>
