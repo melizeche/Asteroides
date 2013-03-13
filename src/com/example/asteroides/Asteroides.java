@@ -11,6 +11,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 
 public class Asteroides extends Activity {
+	//Creamos algunas variables como botones y el almacen de puntuaciones
 	private Button bAcercaDe;
 	private Button bSalir;
 	public static AlmacenPuntuaciones almacen = new AlmacenPuntuacionesArray();
@@ -19,9 +20,11 @@ public class Asteroides extends Activity {
 		
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
+		//asignamos los botones a los objetos creados
 		 bAcercaDe =  (Button) findViewById(R.id.button03);
 		 bSalir = (Button) findViewById(R.id.button4);
 		 
+		 //Creamos el listener, equivalente al onClick del xml
 		 bSalir.setOnClickListener(new OnClickListener() {
 			 public void onClick(View view){
 				 //finish();
@@ -60,20 +63,7 @@ public class Asteroides extends Activity {
 	             return true; /** true -> consumimos el item, no se propaga*/
 	    }
 	
-	/*public void recur(){
-		Resources res =getResources();
-		//Drawable drawable =res.getDrawable(R.drawable.asteroide);
-		String saludo = res.getString(R.string.saludo);
-		int color =res.getColor(R.color.verde_opaco);
-		float tamanoFuente =res.getDimension(R.dimen.tamano_fuente);
-		int maxAsteroides =res.getInteger(R.integer.max_asteroides);
-		boolean ilimitados = res.getBoolean(R.bool.misiles_ilimitados);
-		String[] diasSemana =res.getStringArray(R.array.dias_semana);
-		int[] primoss =res.getIntArray(R.array.primos);
-		//TypedArray asteroides =res.obtainTypedArray(R.array.asteroides);
-		//Drawable asteroide1 =asteroides.getDrawable(0);
-	}
-	*/
+//que hacen los botones
 	public void lanzarAcercaDe(View view){
 	      Intent i = new Intent(this, AcercaDe.class);
           startActivity(i);
@@ -84,6 +74,10 @@ public class Asteroides extends Activity {
 	 }
 	public void lanzarPuntuaciones(View view) {
 		Intent i = new Intent(this, Puntuaciones.class);
+		startActivity(i);
+		}
+	public void lanzarJuego(View view) {
+		Intent i = new Intent(this, Juego.class);
 		startActivity(i);
 		}
 

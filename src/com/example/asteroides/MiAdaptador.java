@@ -29,6 +29,7 @@ public class MiAdaptador extends BaseAdapter {
           TextView textView =(TextView)view.findViewById(R.id.titulo);
           textView.setText(lista.elementAt(position));
           ImageView imageView=(ImageView)view.findViewById(R.id.icono);
+          //randomiza como que imagen se va a mostrar
           switch (Math.round((float)Math.random()*3)){
           case 0:
                  imageView.setImageResource(R.drawable.asteroide1);

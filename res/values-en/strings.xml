@@ -8,5 +8,9 @@
     <string name="configurar">Settings</string>
     <string name="Acerca">About</string>
     <string name="salir">Exit</string>
+    <string name="AcercaText">This Android app is an example of how can anyone can lauch activities and other things.</string>
+    <string name="saludo">¡Hello World!</string>
+    <string name="Puntuaciones">Scores</string>
+    <string name="otro_texto">Other Text</string>
 
 </resources>

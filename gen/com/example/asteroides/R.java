@@ -53,25 +53,34 @@ public final class R {
         public static final int asteroide2=0x7f020001;
         public static final int asteroide3=0x7f020002;
         public static final int asteroide4=0x7f020003;
-        public static final int ic_launcher=0x7f020004;
+        public static final int degradado=0x7f020004;
+        public static final int fondo=0x7f020005;
+        public static final int fondo2=0x7f020006;
+        public static final int ic_launcher=0x7f020007;
+        public static final int misil1=0x7f020008;
+        public static final int misil2=0x7f020009;
+        public static final int misil3=0x7f02000a;
+        public static final int nave=0x7f02000b;
+        public static final int nave_fuego=0x7f02000c;
     }
     public static final class id {
-        public static final int LinearLayout1=0x7f0c0006;
+        public static final int LinearLayout1=0x7f0c0007;
         public static final int TextView01=0x7f0c0002;
-        public static final int acercaDe=0x7f0c0010;
-        public static final int action_settings=0x7f0c000e;
-        public static final int button03=0x7f0c000a;
-        public static final int button1=0x7f0c0008;
-        public static final int button2=0x7f0c0009;
-        public static final int button4=0x7f0c000b;
+        public static final int VistaJuego=0x7f0c0006;
+        public static final int acercaDe=0x7f0c0011;
+        public static final int action_settings=0x7f0c000f;
+        public static final int button03=0x7f0c000b;
+        public static final int button1=0x7f0c0009;
+        public static final int button2=0x7f0c000a;
+        public static final int button4=0x7f0c000c;
         public static final int button_ok=0x7f0c0000;
-        public static final int config=0x7f0c000f;
+        public static final int config=0x7f0c0010;
         public static final int dialog_exit=0x7f0c0001;
         public static final int icono=0x7f0c0003;
         public static final int subtitulo=0x7f0c0005;
-        public static final int tableRow1=0x7f0c000c;
-        public static final int tableRow2=0x7f0c000d;
-        public static final int textView1=0x7f0c0007;
+        public static final int tableRow1=0x7f0c000d;
+        public static final int tableRow2=0x7f0c000e;
+        public static final int textView1=0x7f0c0008;
         public static final int titulo=0x7f0c0004;
     }
     public static final class integer {
@@ -80,8 +89,9 @@ public final class R {
     public static final class layout {
         public static final int acercade=0x7f030000;
         public static final int elemento_lista=0x7f030001;
-        public static final int main=0x7f030002;
-        public static final int puntuaciones=0x7f030003;
+        public static final int juego=0x7f030002;
+        public static final int main=0x7f030003;
+        public static final int puntuaciones=0x7f030004;
     }
     public static final class menu {
         public static final int main=0x7f0d0000;
@@ -96,6 +106,7 @@ public final class R {
         public static final int configurar=0x7f080004;
         public static final int hello_world=0x7f080001;
         public static final int jugar=0x7f080003;
+        public static final int otro_texto=0x7f08000a;
         public static final int salir=0x7f080006;
         public static final int saludo=0x7f080008;
     }

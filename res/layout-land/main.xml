@@ -3,7 +3,7 @@
     android:id="@+id/LinearLayout1"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/Negro"
+    android:background="@drawable/fondo"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="@dimen/treinta"
@@ -33,12 +33,14 @@
                 android:id="@+id/button1"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:onClick="lanzarJuego"
                 android:text="@string/jugar" />
 
             <Button
                 android:id="@+id/button2"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:onClick="lanzarPreferencias"
                 android:text="@string/configurar" />
 
         </TableRow>
@@ -58,7 +60,7 @@
                 android:id="@+id/button4"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/salir" />
+                android:text="@string/Puntuaciones" />
 
         </TableRow>
     </TableLayout>
