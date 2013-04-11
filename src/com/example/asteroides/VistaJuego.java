@@ -19,6 +19,9 @@ import android.view.MotionEvent;
 import android.view.View;
 
 public class VistaJuego extends View  implements SensorEventListener{
+	
+	public final SensorManager mSensorManager;
+	public final Sensor mAccelerometer;
 
 	// //// NAVE //////
 	private Grafico nave;// Gráfico de la nave
@@ -53,7 +56,10 @@ public class VistaJuego extends View  implements SensorEventListener{
 	public VistaJuego(Context context, AttributeSet attrs) {
 
           super(context, attrs);
-
+          ////
+          mSensorManager = (SensorManager)context.getSystemService(Context.SENSOR_SERVICE);
+          mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+          ////
           Drawable drawableNave, drawableAsteroide, drawableMisil;
           ShapeDrawable dMisil = new ShapeDrawable(new RectShape());
           
@@ -96,6 +102,8 @@ public class VistaJuego extends View  implements SensorEventListener{
              Sensor orientationSensor = listSensors.get(0);
              mSensorManager.registerListener(this, orientationSensor,
                                         SensorManager.SENSOR_DELAY_GAME);
+//             mSensorManager.registerListener(this, mAccelerometer,
+//                     SensorManager.SENSOR_DELAY_GAME);
           }
 
     }
@@ -191,7 +199,38 @@ public class VistaJuego extends View  implements SensorEventListener{
         misilActivo = false;
     }
     class ThreadJuego extends Thread {
-    	   @Override
+    	 private boolean pausa,corriendo;
+    	 
+    	   public synchronized void pausar() {
+    	          pausa = true;
+    	   }
+    	 
+    	   public synchronized void reanudar() {
+    	          pausa = false;
+    	          notify();
+    	   }
+    	 
+    	   public void detener() {
+    	          corriendo = false;
+    	          if (pausa) reanudar();
+    	   }
+    	   @Override    public void run() {
+    	          corriendo = true;
+    	          while (corriendo) {
+    	                 actualizaFisica();
+    	                 synchronized (this) {
+    	                       while (pausa) {
+    	                              try {
+    	                                     wait();
+    	                              } catch (Exception e) {
+    	                              }
+    	                       }
+    	                 }
+    	          }
+    	   }
+    	   
+    	   
+/*    	   @Override
     	   public void run() {
     	          while (true) {
     	                 actualizaFisica();
@@ -201,7 +240,7 @@ public class VistaJuego extends View  implements SensorEventListener{
     	                		 Thread.currentThread().interrupt();
     	                	 }
     	          }
-    	   }
+    	   }*/
     	}
     private void ActivaMisil() {
         misil.setPosX(nave.getPosX()+ nave.getAncho()/2-misil.getAncho()/2);
@@ -264,5 +303,11 @@ public class VistaJuego extends View  implements SensorEventListener{
           }
           giroNave=(int) (valor-valorInicial)/3 ;
     }
+
+
+
+	public ThreadJuego getThread() {
+		return thread;
+	}
 
 }
